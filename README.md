@@ -10,10 +10,20 @@
 
 ## 安装与运行
 
-1. 下载项目中的 `IDS_Composer.py`。
+### 运行环境要求
+
+在使用前，请确保您的 Glyphs.app 已安装必要的运行环境：
+
+1. 打开 Glyphs 顶部菜单栏 -> **窗口** -> **插件管理器**。
+2. 切换至 **Modules** 标签页，确认已安装 **python** 和 **Vanilla**。
+3. 如果是首次安装，请根据提示重启 Glyphs.app。
+
+### 安装步骤
+
+1. 下载 [Releases](https://github.com/pentalogos/GlyphsPinzi/releases) 页面中的 `IDS_Composer.py`。
 2. 打开 Glyphs.app，进入顶部菜单栏的 `脚本` -> `打开脚本文件夹`。
 3. 将 `IDS_Composer.py` 放入该目录中。
-4. 重新打开 Glyphs，点击“脚本”->“IDS 汉字拼字”。
+4. 重新打开 Glyphs（或按下 `Cmd + Opt + Shift + Y` 刷新脚本列表），点击“脚本”菜单即可看到并运行。
 
 ## 更新 IDS 数据库或字表
 
