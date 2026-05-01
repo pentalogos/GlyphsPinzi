@@ -29,11 +29,12 @@ def main():
     charset_dir = "字表"
     charsets = {}
     if os.path.isdir(charset_dir):
-        for fname in sorted(os.listdir(charset_dir)):
-            fpath = os.path.join(charset_dir, fname)
-            if os.path.isfile(fpath) and fname.endswith('.txt'):
-                name = fname[:-4]
-                charsets[name] = fpath
+        for root, _, files in os.walk(charset_dir):
+            for fname in sorted(files):
+                if fname.endswith('.txt'):
+                    fpath = os.path.join(root, fname)
+                    name = fname[:-4]
+                    charsets[name] = fpath
     
     print(f"📖 发现地区字表：{', '.join(charsets.keys()) if charsets else '无'}")
     
